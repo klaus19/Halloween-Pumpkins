@@ -1,62 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/btnRandom"
     android:layout_width="match_parent"
+    android:background="#ffc4ff"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    >
 
+  <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="150dp"
+      android:layout_height="wrap_content"
+      android:id="@+id/textMyNumber"
+      android:text="Put a Number"
+      android:textColor="@color/button"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="300dp"
+      android:gravity="center"/>
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/appCompatTextView"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:text="Your Number"
+        android:id="@+id/textMarnusNumber"
+        android:layout_below="@id/textMyNumber"
+        android:text="Put a Number"
         android:textColor="@color/button"
-        app:layout_constraintBottom_toTopOf="@+id/textRandomValue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textRandomValue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"/>
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="150dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
-        android:gravity="center"
-        android:text="Number of Marnus"
-        android:textColor="@color/button"
-        app:layout_constraintBottom_toTopOf="@+id/btnShoot"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView"
-        tools:ignore="MissingConstraints" />
-
-    <Button
+        android:layout_height="wrap_content"
         android:id="@+id/btnShoot"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_below="@id/textMarnusNumber"
+        android:layout_marginTop="40dp"
         android:background="@drawable/roundedbutton"
-        android:text="Marnus"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.553"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textColor="#FFFFFF"
+        android:text="Shoot"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
