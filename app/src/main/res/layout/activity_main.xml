@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#ffc4ff"
     android:layout_height="match_parent"
     >
 
@@ -44,7 +43,7 @@
       android:layout_centerHorizontal="true"
       android:layout_marginTop="250dp"
       android:gravity="center"
-      android:text="Put your Number"
+      android:text="Choose a Number"
       android:textColor="@color/button" />
 
   <androidx.appcompat.widget.AppCompatTextView
