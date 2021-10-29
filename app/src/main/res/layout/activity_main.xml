@@ -6,28 +6,36 @@
     android:background="#ffc4ff"
     android:layout_height="match_parent"
     >
+
+
   <LinearLayout
       android:layout_width="match_parent"
-      android:layout_height="64dp"
-      android:layout_marginTop="60dp"
+      android:layout_height="128dp"
+      android:layout_centerHorizontal="true"
       android:layout_marginLeft="40dp"
+      android:layout_marginTop="60dp"
       android:layout_marginRight="0dp"
       android:orientation="horizontal">
+
     <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="64dp"
-        android:layout_height="64dp"
         android:id="@+id/avatar"
-        android:src="@drawable/model"/>
-   <androidx.appcompat.widget.AppCompatImageView
-       android:layout_width="64dp"
-       android:layout_height="64dp"
-       android:layout_marginRight="10dp"
-       android:layout_marginLeft="200dp"
-       android:id="@+id/monster"
-       android:src="@drawable/monster"/>
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/avatar" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_url="https://assets5.lottiefiles.com/packages/lf20_nBze2y.json" />
 
   </LinearLayout>
-
 
   <androidx.appcompat.widget.AppCompatTextView
       android:id="@+id/textMyNumber"
