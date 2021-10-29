@@ -7,34 +7,37 @@
     android:layout_height="match_parent"
     >
 
+
   <androidx.appcompat.widget.AppCompatTextView
-      android:layout_width="150dp"
-      android:layout_height="wrap_content"
       android:id="@+id/textMyNumber"
-      android:text="Put a Number"
-      android:textColor="@color/button"
+      android:layout_width="150dp"
+      android:layout_height="50dp"
       android:layout_centerHorizontal="true"
       android:layout_marginTop="300dp"
-      android:gravity="center"/>
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/textMarnusNumber"
-        android:layout_below="@id/textMyNumber"
-        android:text="Put a Number"
-        android:textColor="@color/button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:gravity="center"/>
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnShoot"
-        android:layout_below="@id/textMarnusNumber"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/roundedbutton"
-        android:textColor="#FFFFFF"
-        android:text="Shoot"
-        android:layout_centerHorizontal="true"/>
+      android:gravity="center"
+      android:text="Put your Number"
+      android:textColor="@color/button" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/textMarnusNumber"
+      android:layout_width="150dp"
+      android:layout_height="50dp"
+      android:layout_below="@id/textMyNumber"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="40dp"
+      android:gravity="center"
+      android:text="Put a Number"
+      android:textColor="@color/button" />
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/btnShoot"
+      android:layout_width="150dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/textMarnusNumber"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="40dp"
+      android:background="@drawable/roundedbutton"
+      android:text="Shoot"
+      android:textColor="#FFFFFF" />
 
 </RelativeLayout>
