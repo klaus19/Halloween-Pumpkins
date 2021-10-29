@@ -1,6 +1,6 @@
 # RandomNumberGame
-I am developing a simple game where I will be having a match again Random function.Let's see who wins after 10 rounds ;)
-In this playground its you playing against Monster named Marnus. There will be ten rounds.
+I am developing a simple game to fight against the Halloween Monster Marnus for Halloween Pumpkins .Let's see who wins more Pumpkins after 10 rounds ;)
+
 
 while(rounds<=10){
   if(your_number>number_by_marnus){
