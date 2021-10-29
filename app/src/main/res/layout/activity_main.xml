@@ -6,6 +6,27 @@
     android:background="#ffc4ff"
     android:layout_height="match_parent"
     >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="64dp"
+      android:layout_marginTop="60dp"
+      android:layout_marginLeft="40dp"
+      android:layout_marginRight="0dp"
+      android:orientation="horizontal">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/avatar"
+        android:src="@drawable/model"/>
+   <androidx.appcompat.widget.AppCompatImageView
+       android:layout_width="64dp"
+       android:layout_height="64dp"
+       android:layout_marginRight="10dp"
+       android:layout_marginLeft="200dp"
+       android:id="@+id/monster"
+       android:src="@drawable/monster"/>
+
+  </LinearLayout>
 
 
   <androidx.appcompat.widget.AppCompatTextView
@@ -13,7 +34,7 @@
       android:layout_width="150dp"
       android:layout_height="50dp"
       android:layout_centerHorizontal="true"
-      android:layout_marginTop="300dp"
+      android:layout_marginTop="250dp"
       android:gravity="center"
       android:text="Put your Number"
       android:textColor="@color/button" />
@@ -26,7 +47,7 @@
       android:layout_centerHorizontal="true"
       android:layout_marginTop="40dp"
       android:gravity="center"
-      android:text="Put a Number"
+      android:text=""
       android:textColor="@color/button" />
 
   <androidx.appcompat.widget.AppCompatButton
