@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AnimationUtils
 import com.tejas.randomnumbergame.databinding.ActivityMainBinding
+import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,6 +20,14 @@ class MainActivity : AppCompatActivity() {
 
         with(binding){
             btnShoot.startAnimation(AnimationUtils.loadAnimation(this@MainActivity,R.anim.shake))
+
         }
+        with(binding){
+            btnShoot?.setOnClickListener {
+              val rnds=(0..10).random()
+                textMarnusNumber.text=rnds.toString()
+            }
+        }
+
     }
 }
