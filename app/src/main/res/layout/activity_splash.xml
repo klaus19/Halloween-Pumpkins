@@ -23,7 +23,8 @@
 
     <TextView
         android:id="@+id/textHello"
-        android:layout_width="150dp"
+        android:layout_width="250dp"
+        android:textSize="20sp"
         android:layout_height="wrap_content"
         android:textColor="@color/button"
         android:gravity="center"
