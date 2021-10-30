@@ -6,35 +6,32 @@
     android:layout_height="match_parent"
     >
 
-
-  <LinearLayout
+  <RelativeLayout
+      android:id="@+id/headerBarLinearLayout"
       android:layout_width="match_parent"
-      android:layout_height="128dp"
-      android:layout_centerHorizontal="true"
-      android:layout_marginLeft="40dp"
-      android:layout_marginTop="60dp"
-      android:layout_marginRight="0dp"
-      android:orientation="horizontal">
+      android:layout_marginTop="50dp"
+      android:layout_height="match_parent" >
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/avatar"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
-        android:layout_marginLeft="5dp"
-        android:src="@drawable/avatar" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animationView"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="10dp"
-        android:scaleType="fitXY"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_url="https://assets5.lottiefiles.com/packages/lf20_nBze2y.json" />
+    <ImageView
+        android:id="@+id/batteryImageView"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:src="@drawable/avatar" android:layout_weight="0"
+        android:layout_alignParentLeft="true"
+        />
 
-  </LinearLayout>
+    <ImageView
+        android:id="@+id/exit_button"
+        android:src="@drawable/monster"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        />
+
+  </RelativeLayout>
+
 
   <androidx.appcompat.widget.AppCompatTextView
       android:id="@+id/textMyNumber"
@@ -60,7 +57,7 @@
   <androidx.appcompat.widget.AppCompatButton
       android:id="@+id/btnShoot"
       android:layout_width="150dp"
-      android:layout_height="wrap_content"
+      android:layout_height="50dp"
       android:layout_below="@id/textMarnusNumber"
       android:layout_centerHorizontal="true"
       android:layout_marginTop="40dp"

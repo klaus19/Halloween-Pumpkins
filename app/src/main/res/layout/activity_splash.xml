@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    >
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animationView"
+        android:id="@+id/lav_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        app:lottie_url="https://assets9.lottiefiles.com/private_files/lf30_sn16ycds.json"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginEnd="16dp"
         app:lottie_autoPlay="true"
-        app:lottie_loop="true"/>
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/marnus"
+        android:layout_marginTop="100dp"
+        app:lottie_speed="1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="178dp" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/textHello"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/button"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lav_main"
+        android:layout_marginTop="10dp"
+        android:text="Hey there, Marnus here!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="514dp" />
+
+</RelativeLayout>
