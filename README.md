@@ -1,4 +1,4 @@
-# RandomNumberGame
+# Halloween-Pumpkins
 I am developing a simple game to fight against the Halloween Monster Marnus for Halloween Pumpkins .Let's see who wins more Pumpkins after 10 rounds ;)
 
 
