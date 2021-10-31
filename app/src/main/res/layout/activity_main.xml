@@ -42,7 +42,7 @@
       android:layout_centerHorizontal="true"
       android:layout_marginTop="380dp"
       android:gravity="center"
-      android:text="Choose a Number"
+      android:text=""
       android:textColor="@color/button" />
 
   <androidx.appcompat.widget.AppCompatTextView
