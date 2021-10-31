@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/PRATIK/AndroidStudioProjects/RandomNumberGame/app/src/main/res/drawable/ic_baseline_help_outline_24.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/PRATIK/AndroidStudioProjects/RandomNumberGame/app/src/main/res/drawable/roundedbutton.xml" value="0.20092592592592592" />
         <entry key="..\:/Users/PRATIK/AndroidStudioProjects/RandomNumberGame/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/PRATIK/AndroidStudioProjects/RandomNumberGame/app/src/main/res/layout/activity_splash.xml" value="0.2328125" />
+        <entry key="..\:/Users/PRATIK/AndroidStudioProjects/RandomNumberGame/app/src/main/res/layout/bottom_navigation.xml" value="0.2328125" />
+        <entry key="..\:/Users/PRATIK/AndroidStudioProjects/RandomNumberGame/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.2328125" />
       </map>
     </option>
   </component>

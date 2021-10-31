@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/nightfarm"
     >
 
   <RelativeLayout
@@ -56,6 +55,13 @@
       android:text=""
       android:textColor="@color/button" />
 
+  <androidx.appcompat.widget.AppCompatImageView
+      android:layout_width="match_parent"
+      android:layout_height="600dp"
+      android:id="@+id/farm"
+      android:layout_below="@id/textMarnusNumber"
+      android:src="@drawable/farm"/>
+
 
   <androidx.appcompat.widget.AppCompatButton
       android:id="@+id/btnShoot"
@@ -67,6 +73,13 @@
       android:background="@drawable/roundedbutton"
       android:text="Shoot"
       android:textColor="#FFFFFF" />
+
+  <include
+      layout="@layout/bottom_navigation"
+      android:layout_width="match_parent"
+      android:layout_height="600dp"
+      android:layout_marginTop="10dp"
+      android:layout_below="@id/btnShoot" />
 
 
 </RelativeLayout>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Halloween Pumpkins</string>
+    <string name="play">Start Game</string>
+    <string name="playing_guide">Play Guide</string>
 </resources>

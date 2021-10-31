@@ -11,6 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RandomNumberGame">
         <activity android:name=".SplashActivity"
+            android:theme="@style/Theme.Splashscreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
